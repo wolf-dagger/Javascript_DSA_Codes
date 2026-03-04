@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/running-sum-of-1d-array/
+
 "use strict"
 
 let arr = [1, 2, 3, 4];

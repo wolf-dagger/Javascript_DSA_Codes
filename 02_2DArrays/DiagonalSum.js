@@ -1,6 +1,6 @@
-"use strict"
+// https://leetcode.com/problems/matrix-diagonal-sum/
 
-// let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+"use strict"
 
 let matrix = [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
 

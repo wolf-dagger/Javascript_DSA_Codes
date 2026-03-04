@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/left-and-right-sum-differences/
+
 "use strict"
 
 let arr = [10, 4, 8, 3];

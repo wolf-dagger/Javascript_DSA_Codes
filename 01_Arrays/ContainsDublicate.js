@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/contains-duplicate/
+
 "use strict"
 
 let arr = [1, 2, 3];
