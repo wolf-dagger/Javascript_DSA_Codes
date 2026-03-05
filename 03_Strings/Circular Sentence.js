@@ -3,14 +3,19 @@
 'use strict'
 
 function solve(s) {
-    let arr = s.split(" ");
-    console.log(arr);
 
+    if (s[0] !== s.at(-1)) return false;
 
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === ' ') {
+            if (s[i - 1] !== s[i + 1]) return false;
+        }
+    }
+    return true;
 }
 
 let sentence = "leetcode exercises sound delightful";
 
-// console.log(solve(sentence));
+console.log(solve(sentence));
 
-solve(sentence);
+// O(n)

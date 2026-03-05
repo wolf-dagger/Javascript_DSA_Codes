@@ -57,3 +57,5 @@ function solve2(words) {
 const words = ["aba", "aabb", "abcd", "bac", "aabc"];
 
 console.log(solve2(words));
+
+// O(n)
