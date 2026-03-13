@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@typinghare/stack-queue": "^1.0.0"
+  }
+}

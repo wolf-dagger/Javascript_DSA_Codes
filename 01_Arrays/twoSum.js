@@ -5,7 +5,7 @@
 let arr = [3, 2, 4];
 const target = 6;
 
-function fun(arr) {
+function fun(arr, target) {
     let map = new Map();
 
     for (let i = 0; i < arr.length; i++) {
@@ -19,4 +19,4 @@ function fun(arr) {
     return [-1, -1];
 }
 
-console.log(fun(arr));
+console.log(fun(arr, target));
