@@ -36,5 +36,35 @@ function insertionSort(arr) {
     return arr;
 }
 
+function mergeSort(arr, start, end) {
+
+    if (start > end) return [];
+    if (start === end) return [arr[start]];
+
+    let mid = Math.floor((start + end) / 2);
+
+    let firstHalf = mergeSort(arr, start, mid);
+    let secondHalf = mergeSort(arr, mid + 1, end);
+
+    return merge(firstHalf, secondHalf);
+}
+
+function merge(a, b) {
+    let result = new Array(a.length + b.length);
+
+    let i = 0, j = 0, k = 0;
+    while (i < a.length && j < b.length) {
+        if (a[i] <= b[j]) {
+            result[k++] = a[i++];
+        } else {
+            result[k++] = b[j++];
+        }
+    }
+    while (i < a.length) result[k++] = a[i++];
+    while (j < b.length) result[k++] = b[j++];
+
+    return result;
+}
+
 let arr = [40, 50, 20, 10, 30];
-console.log(insertionSort(arr));
+console.log(mergeSort(arr, 0, arr.length - 1));

@@ -1,5 +1,6 @@
 {
+  "type": "module",
   "dependencies": {
-    "@typinghare/stack-queue": "^1.0.0"
+    "heap-js": "^2.7.1"
   }
 }
