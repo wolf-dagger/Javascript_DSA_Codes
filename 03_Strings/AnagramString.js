@@ -2,10 +2,10 @@
 
 "use strict";
 
-let s = 'anagram';
-let t = 'nagaram';
+let s = 'rat';
+let t = 'car';
 
-console.log(solve2(s, t))
+console.log(solve3(s, t))
 
 
 // 1. Main approach
@@ -54,4 +54,4 @@ function solve2(s, t) {
     return true;
 }
 
-//both approach have time complexity of O(n)
+//all approach have time complexity of O(n)

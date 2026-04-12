@@ -18,24 +18,23 @@ Constraints:
 
 function solve(arr) {
     let map = new Map();
-    let prefixSum = 0;
+
+    let sum = 0;
     let maxLen = 0;
 
+    map.set(0, -1);
+
     for (let i = 0; i < arr.length; i++) {
-        prefixSum += arr[i];
+        sum += arr[i];
 
-        if (prefixSum === 0) {
-            maxLen = i + 1;
-        }
-
-        if (map.has(prefixSum)) {
-            let length = i - map.get(prefixSum);
-            maxLen = Math.max(maxLen, length);
+        if (map.has(sum)) {
+            let len = i - map.get(sum);
+            maxLen = Math.max(maxLen, len);
         } else {
-            map.set(prefixSum, i);
+
+            map.set(sum, i);
         }
     }
-
     return maxLen;
 }
 
