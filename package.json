@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
+    "@datastructures-js/queue": "^4.3.0",
     "heap-js": "^2.7.1"
   }
 }
