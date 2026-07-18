@@ -117,16 +117,4 @@ class LinkedList {
     }
 }
 
-// const linkedList = new LinkedList();
-//
-// linkedList.addFirst(5);
-// linkedList.addLast(10);
-// linkedList.addLast(15);
-// linkedList.addFirst(0);
-//
-// linkedList.addAt(2, 100);
-//
-// linkedList.removeAt(1);
-//
-// linkedList.print();
-// console.log(`size : ${linkedList.size()}`);
+export default LinkedList;
