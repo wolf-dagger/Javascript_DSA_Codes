@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/merge-two-sorted-lists/
-import LinkedList from "../../Helper functions/LinkedList.js";
+import LinkedList from "../../Helper functions/Linked List/LinkedList.js";
 
 class ListNode {
     constructor(val) {
