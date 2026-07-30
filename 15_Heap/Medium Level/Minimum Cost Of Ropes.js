@@ -1,6 +1,6 @@
 // https://www.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1
 
-import PriorityQueue from "../../Helper functions/Priority Queue/Priority Queue.js"
+import PriorityQueue from "../../Helper functions/Priority Queue & Heaps/Priority Queue.js"
 
 function solve(arr) {
     let pq = new PriorityQueue((a, b) => a < b);
